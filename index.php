@@ -11,10 +11,13 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 var_dump('HOLA');
 
-$impresora = new ImpresoraPorConsola();
+$consola = new \App\Interfaz\Consola(
+    new \App\Interfaz\EscannerPorConsola(),
+    new ImpresoraPorConsola()
+);
 
 //$impresora->borrarPantalla();
 
-$impresora->titulo('HOla mundo!');
-$impresora->borrarPantalla();
-$impresora->titulo('mÁs fino!');
+$consola->titulo('HOla mundo!');
+$consola->borrarPantalla();
+$consola->titulo('mÁs fino!');
