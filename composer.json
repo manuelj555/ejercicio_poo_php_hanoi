@@ -1,0 +1,17 @@
+{
+    "name": "maguirre/torres_hanoi",
+    "description": "Ejercicio de POO",
+    "type": "project",
+    "authors": [
+        {
+            "name": "maguirre",
+            "email": "maguirre@optimeconsulting.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {}
+}
